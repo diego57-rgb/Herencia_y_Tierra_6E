@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Herencia y Tierra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body style="display: flex; flex-direction: column; background-color: #C0BFB0; overflow-x: hidden; align-items: center;">
+        <div id = "container" style="align-items: center; top: 5%; background-color: rgb(246, 237, 226);flex-direction: row; width: 95%;">
+            <div id ="imagenInformacion"></div>
+            <div>
+            <div class="iconografia" style="margin-top: 5%;">
+                <h1>Fecha</h1>
+                <button class = "icon_box" id = "fecha">
+                    <img src="./iconos/calendario.png" style="width: 30%; ">
+                    <h2 class="iconos_text" style="color: rgb(189, 152, 80)">6 de mayo del 2026</h2>
+                </button>
+            </div>
+            <div class="iconografia">
+                <h1>Horario</h1>
+                <button class = "icon_box" id = "hora">
+                    <img src="./iconos/reloj.png" style="width: 30%; ">
+                    <h2 class="iconos_text" style="color:rgb(85, 132, 47);">13:00-15:00</h2>
+                </button>
+            </div>
+            <div class="iconografia">
+                <h1>Código de vestimenta</h1>
+                <button class = "icon_box" id = "traje">
+                    <img src="./iconos/traje.png" style="width: 30%; ">
+                    <h2 class="iconos_text" style="color:rgb(126, 126, 126);">Formal/Causal</h2>
+                </button>
+            </div>
+            <div class="iconografia">
+                <h1>Lugar</h1>
+                <button class = "icon_box" id = "lugar">
+                    <img src="./iconos/mapra.png" style="width: 30%; ">
+                    <h2 class="iconos_text" style="color:rgb(65, 110, 161);">Ubicación <a href="https://maps.app.goo.gl/uMKpr6ocacsDhf6i7">aquí</a></h2>
+                </button>
+            </div>
+            </div>
+        </div>
+        <button id = "tres-barras"></button>
+        <div id = "barra">
+                <a href="./index.html" class="paginas">Inicio</a>
+                <a href="./informacion.html" class="paginas">Información</a>
+                <a href="./registro.html" class="paginas">Registro</a>
+        </div>
+        <script src="./inicio.js"></script>        
+    </body>
+</html>

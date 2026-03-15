@@ -1,0 +1,527 @@
+
+@media(min-width: 700px){
+@keyframes moveRight {
+    from {
+        left: 93%;
+    }
+    to {
+        left: 66%;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        left: 66%;
+    }
+    to {
+        left: 93%;
+    }
+}
+
+@keyframes moveRightB {
+    from {
+        left: 99%;
+    }
+    to {
+        left: 72%;
+    }
+}
+
+@keyframes moveLeftB {
+    from {
+        left: 72%;
+    }
+    to {
+        left: 99%;
+    }
+}
+
+
+@keyframes barrido {
+    to {transform: translateX(100%);}
+}
+
+
+h2.subtitulo-seccion { font-size: 2rem; }
+
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: black;
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: black;
+    margin: 20px;
+
+}
+
+#imagenRegistro1{
+    display: flex; 
+    position: relative;
+    overflow: hidden;
+    justify-self: center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./iconos/comida.png");
+    transition: none;
+    margin: 5px;
+}
+#imagenRegistro2{
+    display: flex; 
+    position: relative;
+    overflow: hidden;
+    justify-self: center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./iconos/comida2.png");
+    transition: none;
+     margin: 5px;
+}
+
+#imagenRegistro1::after{
+    content: "";
+    position: absolute;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+    inset: 0;
+}
+
+#imagenRegistro2::after{
+    content: "";
+    position: absolute;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+    inset: 0;
+}
+
+#imagen{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 350px;
+    background-image: url("./fondo.1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: none;
+}
+
+#imagen::after{
+    content: "";
+    position: absolute;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+    inset: 0;
+}
+
+
+#titulo{
+    display: flex;
+    position: absolute;
+    height: 60%;
+    left: 30%;
+    align-self: center
+}
+
+#container{
+    display: flex;
+    position: relative;
+    justify-self: center;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+#tres-barras{
+    display: flex;
+    position: fixed;
+    background-image: url("./iconos/tres-barras.png");
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 50px;
+    margin: 2%;
+    background-size: cover;
+    border: 0px solid black;
+    border-radius: 8px;
+    left: 93%
+
+}
+
+#imagenInformacion{
+    width: 30;
+    position: sticky; 
+    width: 55%;
+    height: 700px; 
+    align-self: baseline; 
+    top: -5px;
+    background-image: url("./iconos/mexico.png");
+    background-size: contain;
+}
+
+.iconografia{
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 5%;
+    margin-right: 20%;
+    background-color: #d9d8c8;
+    box-shadow: inset 2px 0px 100px rgb(255, 250, 225);
+}
+
+
+#barra{
+    display: flex;
+    position: fixed; 
+    left: 99%;
+    width: 50%; 
+    height: 90%; 
+    background-color: #5a323e;
+    border-radius: 10px;
+    color: white;
+    flex-direction: column;
+}
+
+.paginas{
+    display: flex;
+    color: rgba(141, 141, 141, 0.596);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px;
+    border-top: 2px solid rgba(141, 141, 141, 0.596);
+    border-bottom: 2px solid rgba(141, 141, 141, 0.596);
+    text-decoration: none;
+}
+
+
+.text_{
+    margin: 20px
+}
+
+.iconos_text{
+    background-color: white; 
+    padding: 20px
+}
+
+.icon_box{
+    position: relative;
+    overflow: hidden;
+    border: 0px solid transparent;
+    flex-direction: row; 
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    background-color: white;
+    transition: none;
+    right: 50px;
+    border-left: 2px solid black;
+}
+
+
+.icon_box::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+
+}
+
+#fecha:hover{
+    background-color: #ece9bc;
+}
+#hora:hover{
+    background-color: #a6c39b;
+}
+#traje:hover{
+    background-color: #cfcdcd;
+}
+#lugar:hover{
+    background-color: #b5d8d6;
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width: 700px){
+@keyframes moveRight {
+    from {
+        left: 80%;
+    }
+    to {
+        left: 47%;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        left: 47%;
+    }
+    to {
+        left: 80%;
+    }
+}
+
+@keyframes moveRightB {
+    from {
+        left: 95%;
+    }
+    to {
+        left: 62%;
+    }
+}
+
+@keyframes moveLeftB {
+    from {
+        left: 62%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@keyframes barrido {
+    to {transform: translateX(100%);}
+}
+
+
+h2.subtitulo-seccion { font-size: 2rem; }
+
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: black;
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: black;
+    margin: 20px;
+
+}
+
+#imagenRegistro1{
+    display: flex; 
+    position: relative;
+    overflow: hidden;
+    justify-self: center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./iconos/comida.png");
+    transition: none;
+    margin: 5px;
+}
+#imagenRegistro2{
+    display: flex; 
+    position: relative;
+    overflow: hidden;
+    justify-self: center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./iconos/comida2.png");
+    transition: none;
+     margin: 5px;
+}
+
+#imagenRegistro1::after{
+    content: "";
+    position: absolute;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+    inset: 0;
+}
+
+#imagenRegistro2::after{
+    content: "";
+    position: absolute;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+    inset: 0;
+}
+
+#imagen{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 250px;
+    background-image: url("./fondo.2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: none;
+}
+
+#imagen::after{
+    content: "";
+    position: absolute;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+    inset: 0;
+}
+
+
+#titulo{
+    display: flex;
+    position: absolute;
+    height: 60%;
+    left: 30%;
+    align-self: center
+}
+
+#container{
+    display: flex;
+    position: relative;
+    justify-self: center;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+#tres-barras{
+    display: flex;
+    position: fixed;
+    background-image: url("./iconos/tres-barras.png");
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 50px;
+    margin: 2%;
+    background-size: cover;
+    border: 0px solid black;
+    border-radius: 8px;
+    left: 80%
+
+}
+
+#imagenInformacion{
+    display: flex;
+    position: sticky; 
+    width: 200%;
+    height: 700px;
+    align-self: baseline; 
+    top: -5px;
+    background-image: url("./iconos/mexico.png");
+    background-size: contain;
+
+}
+
+.iconografia{
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 5%;
+    margin-right: 10%;
+    background-color: #d9d8c8;
+    box-shadow: inset 2px 0px 100px rgb(255, 250, 225);
+}
+
+
+#barra{
+    display: flex;
+    position: fixed; 
+    left: 95%;
+    width: 50%; 
+    height: 90%; 
+    background-color: #5a323e;
+    border-radius: 10px;
+    color: white;
+    flex-direction: column;
+}
+
+.paginas{
+    display: flex;
+    color: rgba(141, 141, 141, 0.596);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px;
+    border-top: 2px solid rgba(141, 141, 141, 0.596);
+    border-bottom: 2px solid rgba(141, 141, 141, 0.596);
+    text-decoration: none;
+}
+
+
+.text_{
+    margin: 20px
+}
+
+.iconos_text{
+    background-color: white; 
+    padding: 20px
+}
+
+.icon_box{
+    position: relative;
+    overflow: hidden;
+    border: 0px solid transparent;
+    flex-direction: row; 
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    background-color: white;
+    transition: none;
+    right: 50px;
+    border-left: 2px solid black;
+}
+
+
+.icon_box::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #5a323e;
+    animation: barrido 2s forwards;
+
+}
+
+#fecha:hover{
+    background-color: #ece9bc;
+}
+#hora:hover{
+    background-color: #a6c39b;
+}
+#traje:hover{
+    background-color: #cfcdcd;
+}
+#lugar:hover{
+    background-color: #b5d8d6;
+}
+}
